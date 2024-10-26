@@ -29,10 +29,10 @@ return {
     local dapui = require 'dapui'
     return {
       -- Basic debugging keymaps, feel free to change to your liking!
-      { '<F5>', dap.continue, desc = 'Debug: Start/Continue' },
-      { '<F1>', dap.step_into, desc = 'Debug: Step Into' },
-      { '<F2>', dap.step_over, desc = 'Debug: Step Over' },
-      { '<F3>', dap.step_out, desc = 'Debug: Step Out' },
+      { '<M-r>', dap.continue, desc = 'Debug: Start/Continue' },
+      { '<M-i>', dap.step_into, desc = 'Debug: Step Into' },
+      { '<M-o>', dap.step_over, desc = 'Debug: Step Over' },
+      { '<M-q>', dap.step_out, desc = 'Debug: Step Out' },
       { '<leader>b', dap.toggle_breakpoint, desc = 'Debug: Toggle Breakpoint' },
       {
         '<leader>B',
@@ -42,7 +42,7 @@ return {
         desc = 'Debug: Set Breakpoint',
       },
       -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
-      { '<F7>', dapui.toggle, desc = 'Debug: See last session result.' },
+      { '<M-0>', dapui.toggle, desc = 'Debug: See last session result.' },
       unpack(keys),
     }
   end,
@@ -64,6 +64,7 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+        'gdb',
       },
     }
 
@@ -101,5 +102,8 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
+
+    -- C++ specific config
+    require 'custom.plugins.gdb'
   end,
 }
