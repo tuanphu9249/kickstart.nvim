@@ -102,7 +102,7 @@ vim.g.have_nerd_font = false
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -276,6 +276,13 @@ require('lazy').setup({
   require 'custom.plugins.mini',
   require 'custom.plugins.nvim-treesitter',
   require 'custom.plugins.oil',
+  require 'custom.plugins.noice',
+  require 'custom.plugins.toggleterm',
+  require 'custom.plugins.nvim-surround',
+  require 'custom.plugins.autopairs',
+  require 'custom.plugins.harpoon',
+  require 'custom.plugins.spectre',
+  require 'custom.plugins.nvim-dap',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
