@@ -42,15 +42,15 @@ return {
 
       -- Document existing key chains
       spec = {
-        { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { '<leader>c', group = '[c]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
-        { '<leader>r', group = '[R]ename' },
-        { '<leader>s', group = '[S]earch' },
-        { '<leader>w', group = '[W]orkspace' },
-        { '<leader>t', group = '[T]oggle' },
+        { '<leader>r', group = '[r]ename' },
+        { '<leader>s', group = '[s]earch' },
+        { '<leader>w', group = '[w]orkspace' },
+        { '<leader>t', group = '[t]oggle' },
         { '<leader>-', group = 'Oil[-]' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
-        { '<leader>n', group = '[N]oice', mode = { 'l', 'h' } },
+        { '<leader>h', group = 'Git [h]unk', mode = { 'n', 'v' } },
+        { '<leader>n', group = '[n]oice', mode = { 'l', 'h' } },
         { '<leader>,', group = 'Harpoon [,]' },
         { '<leader>S', group = 'S[p]ectre', mode = { 'p', 'w', 'f' } },
         { '<leader>d', group = '[d]ebugger', mode = { 'c', 'b', 't', 'r' } },
