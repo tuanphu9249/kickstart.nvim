@@ -9,14 +9,14 @@ return {
     config = function()
       local harpoon = require 'harpoon'
 
-      vim.keymap.set('n', '<leader>,', function()
+      vim.keymap.set('n', ',a', function()
         harpoon:list():add()
       end)
       vim.keymap.set('n', ',,', function()
         harpoon.ui:toggle_quick_menu(harpoon:list())
       end)
 
-      vim.keymap.set('n', ',a', function()
+      vim.keymap.set('n', ',q', function()
         harpoon:list():select(1)
       end)
       vim.keymap.set('n', ',w', function()

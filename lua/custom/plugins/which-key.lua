@@ -51,7 +51,6 @@ return {
         { '<leader>-', group = 'Oil[-]' },
         { '<leader>h', group = 'Git [h]unk', mode = { 'n', 'v' } },
         { '<leader>n', group = '[n]oice', mode = { 'l', 'h' } },
-        { '<leader>,', group = 'Harpoon [,]' },
         { '<leader>p', group = 'S[p]ectre', mode = { 'p', 'w', 'f' } },
       },
     },
